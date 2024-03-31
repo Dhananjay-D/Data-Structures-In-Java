@@ -1,6 +1,5 @@
 package Queue;
-
-public class QueueUsingArray{
+public class customQueueImplementation {
     static class Queue {
         static int[] arr;
         static int front = -1;
@@ -27,22 +26,20 @@ public class QueueUsingArray{
             arr[rear] = data;
         }
 
-        public void deque() {
+        public void deque() throws Exception{
             if (isEmpty()) {
-                System.out.println("Queue is empty!");
-                return;
+                throw new Exception("Queue is empty!!");
             }
+
             front++;
         }
 
-        public int peek() {
+        public int peek() throws Exception{
             if (isEmpty()) {
-                System.out.println("Queue is empty!");
-                return -1;
+               throw new Exception("Queue is Empty!!");
             }
             return arr[front];
         }
-
     }
 
     public static void main(String[] args) {
@@ -53,12 +50,16 @@ public class QueueUsingArray{
         q1.enque(4);
         q1.enque(5);
 
-        q1.deque();
-        System.out.println(q1.peek());
-        q1.deque();
-        System.out.println(q1.peek());
-        q1.deque();
-        System.out.println(q1.peek());
+        try {
+            q1.deque();
+            System.out.println(q1.peek());
+            q1.deque();
+            System.out.println(q1.peek());
+            q1.deque();
+            System.out.println(q1.peek());
+        }catch(Exception e){
+            System.out.println(e);
+        }
 
     }
 }

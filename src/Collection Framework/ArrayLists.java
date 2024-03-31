@@ -1,6 +1,8 @@
 // ArrayList Methods:
 
-// add()
+// add(ele)
+// add(index,ele)
+// indexOf()  -  to get index of the elem specified
 // remove()
 // set()
 // get()

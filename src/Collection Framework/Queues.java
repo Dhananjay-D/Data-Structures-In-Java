@@ -1,5 +1,5 @@
 // add()
-// remove()
+// remove() : Returns the element after removing it
 // peek(): Returns the element from the top of the stack without removing it.
 // isEmpty(): Returns true if the stack is empty, false otherwise.
 // size(): Returns the number of elements in the stack.
@@ -17,9 +17,12 @@ public class Queues {
         li.add(4);
         li.add(5);
         System.out.println(li);
-
-        li.remove();
+        System.out.println(li.remove());
         System.out.println(li);
+
+        for(int k=0;k<li.size();k++){
+            System.out.println();
+        }
 
         System.out.println("element at the front is: "+li.peek());
 
