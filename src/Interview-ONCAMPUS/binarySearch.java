@@ -1,4 +1,8 @@
 
+// in binary search it should be sorted
+// time complexity : log(n)
+// whenever we divide an array by 2 always in that case time complexity is: log(n)
+
 public class binarySearch {
     public static void main(String[] args) {
         int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
