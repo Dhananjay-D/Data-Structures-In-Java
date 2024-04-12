@@ -2,38 +2,73 @@
 
 // Linked-List Methods:
 
-// add()
+// add(elem)
+// add(index,elem)
 // addFirst()
 // addLast()
 // remove()
 // removeFirst()
 // removeLast()
+// contains()
+// indexOf()
+// peek()
+// peekFirst()
+// peekLast()
+// set(index,elem) - modify the elem
 // get()
+// clear()
 // size()
+
+//  insertion/deletion - O(1)
+//  searching - O(N)
 
 import java.util.*;
 
 public class Linkedlist {
     public static void main(String[] args) {
-        LinkedList<String> list = new LinkedList<String>();
-        list.add("is"); // add just add to last
-        list.add("a");
-        list.addLast("list");
-        list.addFirst("this");
-        list.add(3, "linked");
-        System.out.println(list);
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + " -> ");
+        LinkedList<String> li=new LinkedList<>();
+
+        // both methods add elem at the last
+        li.add("love");
+        li.addLast("mumbai");
+
+        // this adds the elem to the first of the list
+        li.addFirst("I");
+
+        // this adds the elem to the specified index
+        li.add(1,"really");
+
+        System.out.println(li);
+
+        for (int i = 0; i < li.size(); i++) {
+            System.out.print(li.get(i) + " -> ");
         }
         System.out.println("null");
 
-        System.out.println(list.get(0));
-        System.out.println(list.size());
-        list.remove(3);
-        list.removeFirst();
-        list.removeLast();
+        // checks whether elem is present or not
+        System.out.println(li.contains("mumbai"));
 
-        System.out.println(list);
+        // returns first elem in list
+        System.out.println(li.peek());
+        System.out.println(li.peekFirst());
+
+        // returns the last elem
+        System.out.println(li.peekLast());
+
+        // if elem is present returns its index else: -1
+        System.out.println(li.indexOf("mumbai"));
+
+        // removes last element
+        li.removeLast();
+        System.out.println(li);
+
+        // removes first element
+        li.removeFirst();
+        System.out.println(li);
+
+        // removes elem specified by the index
+        li.remove(0);
+        System.out.println(li);
     }
 }
