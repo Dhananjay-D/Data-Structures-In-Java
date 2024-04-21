@@ -1,0 +1,46 @@
+Bitwise operators: AND(&) , OR(|) , XOR(^) , NOT(~)
+
+-->  if we AND any number with 1 we get the "same number"
+
+-->  if we XOR any number with 1 we get "complement of that number"
+
+-->  if we AND any number with number 1 we get "last digit of that number"
+
+-->  Decimal -> 0,1,2,3,4,5,6,7,8,9  base: "10" because we can form any number with this 10 nums
+     Binary -> 0,1  base: "2"  because we can form any number with this 2 nums
+     Octal -> 0,1,2,3,4,5,6,7 base:"8" because we can form any number with this 8 nums
+
+-->  Hexadecimal -> 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F  base: "16"
+
+-->  Left Shift Operator -> a << x = a * 2 ^ x   (shift number left by x time)
+
+-->  Right Shift Operator -> a >> x = a / 2 ^ x   (shift number right by x time)
+
+-->  Binary addition of the numbers:
+        -> 1+1=10
+           1+1+1=11
+           1+1+1+1=100
+           1+1+1+1+1=101
+
+-->  num & 1 == 1 then "ODD" else if num & 1 != 1 then "EVEN"
+
+-->  Last digit of binary number is known as "least significant bit(lsb)"
+-->  first digit of binary number is known as "most significant bit(msb)"
+-->  if msb is 1 then "negative" ,if 0 then "positive" number.
+
+-->  XOR of same number with itself results in "ZERO"
+
+-->  Find ith bit of a number
+     -->>   n & (1 << (i-1))
+
+-->  Number of digits in given number (formula):                {V.IMP}
+     -->>> (int) (log(num)/log(base)) + 1
+
+--------------------------->>>>BASICS<<<<----------------------------------
+-->  1 Byte = 8 bits
+-->  10 is stored as follows |0 |0 |0 |0 |1 |0 |1 |0 |    in 1 Byte i.e, 8 bits
+-->  Total number i can store in 1 byte is 256 (2^8)
+-->  Range:
+-->  128 +ve nums and 128 -ve nums (2^7 and 2^7)
+--> -128 to 127
+-->  -2^(n-1) to 2^(n-1) -1

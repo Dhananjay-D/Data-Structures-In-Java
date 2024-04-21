@@ -8,7 +8,9 @@
 // get()
 // size()
 // contains()
-// Collections.sort()
+// Collections.sort(li)  --> ascending order
+// Collections.sort(li, Collections.reverseOrder());  -->descending order
+// Collections.reverse(li)  --> reverse
 // clear()
 // isEmpty()
 // addAll(another collection obj)
