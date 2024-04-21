@@ -1,4 +1,4 @@
-package Bitwise_Manipulation;
+package Interview_ONCAMPUS.Bitwise_Manipulation;
 
 public class intTobinary {
     public static void main(String[] args) {

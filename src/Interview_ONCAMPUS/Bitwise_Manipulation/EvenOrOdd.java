@@ -1,4 +1,4 @@
-package Bitwise_Manipulation;
+package Interview_ONCAMPUS.Bitwise_Manipulation;
 
 // if the last digit in binary form contains 1 then its "odd" else "even"
 // idea: do AND with  1 if we get 1 --> "odd" else "even"

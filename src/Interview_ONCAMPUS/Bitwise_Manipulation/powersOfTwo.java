@@ -1,4 +1,4 @@
-package Bitwise_Manipulation;
+package Interview_ONCAMPUS.Bitwise_Manipulation;
 // pgm to find whether the number is 2 to the power or not
 public class powersOfTwo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Bitwise_Manipulation;
+//package Interview_ONCAMPUS.Bitwise_Manipulation;
 // Time complexity : O(N) , Space Complexity : O(1)
 public class Unique_Element {
     public static void main(String[] args) {

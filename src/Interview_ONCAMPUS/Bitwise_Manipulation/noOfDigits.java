@@ -1,4 +1,4 @@
-package Bitwise_Manipulation;
+package Interview_ONCAMPUS.Bitwise_Manipulation;
 // Time Complexity : O(1) and Space Complexity : O(1)
 public class noOfDigits {
     public static void main(String[] args) {
