@@ -2,9 +2,11 @@ Bitwise operators: AND(&) , OR(|) , XOR(^) , NOT(~)
 
 -->  if we AND any number with 1 we get the "same number"
 
--->  if we XOR any number with 1 we get "complement of that number"
+--> (IMP) if we XOR any number with 1 we get "complement of that number"
 
 -->  if we AND any number with number 1 we get "last digit of that number"
+
+-->  setbits refers "to the number of 1's present in the given number"
 
 -->  Decimal -> 0,1,2,3,4,5,6,7,8,9  base: "10" because we can form any number with this 10 nums
      Binary -> 0,1  base: "2"  because we can form any number with this 2 nums
