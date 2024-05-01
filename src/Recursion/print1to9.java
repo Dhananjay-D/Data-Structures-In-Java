@@ -3,7 +3,7 @@ package Recursion;
 public class print1to9 {
     public static void linear(int i,int n){
         if(i>n){
-            return;
+            return; // base condition
         }
         System.out.print(i+" ");
         linear(i+1,n);

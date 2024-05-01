@@ -8,7 +8,7 @@ public class fibonacciSeries {
     public static int fibonnacis(int f,int s,int count,int n){
         count++;
         if(count==n){
-            return f+s;
+            return f+s;  // base condition
         }else{
             return fibonnacis(s,f+s,count,n);
         }
