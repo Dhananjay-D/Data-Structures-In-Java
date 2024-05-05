@@ -3,11 +3,14 @@
 // add(ele)
 // add(index,ele)
 // indexOf()  -  to get index of the elem specified  (if elem not present then returns -1)
+// lastIndexOf()
 // remove()
 // set()
 // get()
 // size()
 // contains()
+// Collections.max(li)
+// Collections.min(li)
 // Collections.sort(li)  --> ascending order
 // Collections.sort(li, Collections.reverseOrder());  -->descending order
 // Collections.reverse(li)  --> reverse
