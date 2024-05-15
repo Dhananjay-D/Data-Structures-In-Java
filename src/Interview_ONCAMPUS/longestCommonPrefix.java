@@ -1,5 +1,5 @@
 // Prints the largest common string among the strings in stringArray
-package Strings;
+package Interview_ONCAMPUS;
 import java.util.Arrays;
 public class longestCommonPrefix {
     public static void main(String[] args) {
