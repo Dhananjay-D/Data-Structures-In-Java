@@ -20,9 +20,9 @@ public class Queues {
         System.out.println(li.remove());
         System.out.println(li);
 
-        for(int k=0;k<li.size();k++){
-            System.out.println();
-        }
+//        for(int k=0;k<li.size();k++){
+//            System.out.println(li.get(k));
+//        }
 
         System.out.println("element at the front is: "+li.peek());
 

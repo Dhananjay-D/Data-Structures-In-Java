@@ -1,4 +1,4 @@
-//HashSet is a unordered collection of data which only contains unique element
+// HashSet is a unordered collection of data which only contains unique element
 //  Methods:
 
 // add()

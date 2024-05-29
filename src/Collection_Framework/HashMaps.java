@@ -1,8 +1,8 @@
+
 // Java HashMap class implements the Map interface which allows us to store key
 // and value pair, where keys should be unique. If you try to insert
 // the duplicate key, it will replace the element of the corresponding key.
 // they are unordered
-
                     // Hashmap methods :
 //put()
 //containsKey()
