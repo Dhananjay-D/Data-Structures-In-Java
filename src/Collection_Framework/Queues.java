@@ -7,7 +7,6 @@
 // contains() : check for an element present or not in stack returns t/f
 
 import java.util.*;
-
 public class Queues {
     public static void main(String[] args) {
         Queue<Integer> li = new LinkedList<Integer>();
