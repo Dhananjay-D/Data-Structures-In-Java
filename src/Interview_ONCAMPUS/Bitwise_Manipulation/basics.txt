@@ -1,7 +1,5 @@
 Bitwise operators: AND(&) , OR(|) , XOR(^) , NOT(~)
 
--->  if we AND any number with 1 we get the "same number"
-
 --> (IMP) if we XOR any number with 1 we get "complement of that number"
 
 -->  if we AND any number with number 1 we get "last digit of that number"
