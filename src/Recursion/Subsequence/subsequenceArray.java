@@ -1,5 +1,5 @@
 package Recursion;
-//The time complexity of the subSec function is O(2^n) where n is the length of the input array.
+//The time complexity of the subSec function is O(n * 2^n) where n is the length of the input array.
 //This is because for each element in the array, we have two choices - either include it in the subsequence
 //or exclude it....(take/not take)
 //The space complexity is also O(n) where n is the length of the input array.

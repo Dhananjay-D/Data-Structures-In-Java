@@ -1,29 +1,34 @@
-package Recursion.Subsequence;
+package Recursion;
 // printing count of subsequences from array which results in sum = k;
-public class countSubSequenceEqualToK {
-    public static  int countSS(int ind,int[] arr,int sum,int k){
-        if(sum>k) return 0;
-        if(ind==arr.length){
-        if(sum==k){
-            return 1;
-        }
-            return 0;
-        }
-        sum=sum+arr[ind];
-        int l=countSS(ind+1,arr,sum,k);
+import java.util.ArrayList;
 
-        sum=sum-arr[ind];
-        int r=countSS(ind+1,arr,sum,k);
+public class countSubSequenceEqualToK{
+    public static int sumsubSec(int ind,int[] arr,ArrayList<Integer> li,int sum,int count){
 
+        if(ind>=arr.length){
+            int s=0;
+            for(int i=0;i<li.size();i++){
+                s+=li.get(i);
+            }
+            if(s==sum){
+//                System.out.println(li);
+                count++;
+            }
+            return count;
+        }
+        li.add(arr[ind]); // to take particular index in subsequence
+        int l=sumsubSec(ind+1,arr,li,sum,count);
+        li.remove(li.indexOf(arr[ind])); // not to take particular index in subsequence
+        int r=sumsubSec(ind+1,arr,li,sum,count);
         return l+r;
     }
 
     public static void main(String[] args) {
-        int[] arr={1,2,1};
-        int k=2;
-        int sum=0;
-        int ind=0;
-        int count=countSS(ind,arr,sum,k);
-        System.out.println(count);
+        int[] arr={1,2,3,4,5};
+        int sum=5;
+        int count=0;
+        ArrayList<Integer> li=new ArrayList<>();
+        int res=sumsubSec(0,arr,li,sum,count);
+        System.out.println(res);
     }
 }

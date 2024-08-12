@@ -1,35 +1,31 @@
 
 package Recursion;
-// prints the only one subsequence from array whose sum is equal to the specified one
-        import java.util.ArrayList;
+// prints the only one subsequence from array whose sum is equal to the specified one i.e, ( k )
+import java.util.ArrayList;
 
 public class OnesumOfSubSequence {
-    public static boolean onesumsubSec(int ind, int[] arr, ArrayList<Integer> li, int s, int sum){
+    public static void onesumsubSec(int ind, int[] arr, ArrayList<Integer> li, int sum){
         if(ind>=arr.length){
+            int s=0;
+            for(int i=0;i<li.size();i++){
+                s+=li.get(i);
+            }
             if(s==sum){
                 System.out.println(li);
-                return true;
+                System.exit(0); // to print only one subsequence equal to k
             }
-            return false;
+            return;
         }
         li.add(arr[ind]); // to take particular index in subsequence
-        s=s+arr[ind];
-        if(onesumsubSec(ind+1,arr,li,s,sum)==true){
-            return true;
-        }
+        onesumsubSec(ind+1,arr,li,sum);
         li.remove(li.indexOf(arr[ind])); // not to take particular index in subsequence
-        s=s-arr[ind];
-        if(onesumsubSec(ind+1,arr,li,s,sum)==true){
-            return true;
-        }
-        return false;
+        onesumsubSec(ind+1,arr,li,sum);
     }
 
     public static void main(String[] args) {
-        int[] arr={1,1,2};
-        int s=0;
+        int[] arr={1,2,1};
         int sum=2;
         ArrayList<Integer> li=new ArrayList<>();
-        onesumsubSec(0,arr,li,s,sum);
+        onesumsubSec(0,arr,li,sum);
     }
 }
