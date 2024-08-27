@@ -4,7 +4,7 @@
 // add(index,ele)
 // indexOf()  -  to get index of the elem specified  (if elem not present then returns -1)
 // lastIndexOf()
-// remove()
+// remove() - index or data specify
 // set()
 // get()
 // size()
@@ -20,7 +20,8 @@
 // containsAll(another collection obj)
 // removeAll(another collection obj)
 
-//  insertion - O(N)  ..time to shift rest elements
+//  insertion - O(1)
+//  deletion - O(n) ..time to shift rest elements
 //  searching - O(1)   ..using indexOf()
 
 import java.util.ArrayList;

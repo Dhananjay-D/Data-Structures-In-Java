@@ -3,7 +3,7 @@
 // peek(): Returns the element from the top of the stack without removing it.
 // isEmpty(): Returns true if the stack is empty, false otherwise.
 // size(): Returns the number of elements in the stack.
-// clear: to clear all the data from collection.
+// clear(): to clear all the data from collection.
 // get(): to get a data from collection specifying index of req element.
 // search() : search for an object specified and returns index number
 // contains() : check for an element present or not in stack returns t/f
