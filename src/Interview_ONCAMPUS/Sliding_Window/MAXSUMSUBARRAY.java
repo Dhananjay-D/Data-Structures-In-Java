@@ -25,7 +25,7 @@ public class MAXSUMSUBARRAY {
 
     public static void main(String[] args) {
         int[] arr={2,9,31,-4,21,7};// ans 48
-        int k=3;
+        int k=3; // size of window
         int res=ans(arr,k);
         System.out.println("Maximum sum from sub-array of size 3 is: "+res);
     }

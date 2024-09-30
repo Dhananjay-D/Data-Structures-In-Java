@@ -11,7 +11,7 @@ public class frequencyOfCharInString {
 
         char[] arr=s.toCharArray();
         for(char x:arr){
-            if(String.valueOf(x).equals(String.valueOf(ch))){
+            if(x==ch){
                 count++;
             }
         }
