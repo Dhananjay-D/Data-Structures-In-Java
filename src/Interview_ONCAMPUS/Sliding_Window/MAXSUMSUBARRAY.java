@@ -1,6 +1,6 @@
 package Interview_ONCAMPUS.Sliding_Window;
 // Maximum sum sub-array of size k
-// Implementation by sliding window concept
+// Implementation by Sliding window concept
 // Time Complexity : O(N)
 
 public class MAXSUMSUBARRAY {

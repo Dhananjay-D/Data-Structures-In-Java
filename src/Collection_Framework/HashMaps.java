@@ -35,10 +35,14 @@ public class HashMaps {
         map.remove(1);
         System.out.println(map);
 
+
+
         // for iterating in a hashmap
         for(Map.Entry<Integer,String> item:map.entrySet()){
             System.out.println("key: "+item.getKey()+" Value: "+item.getValue());
         }
+
+
 
         //checking equality
         System.out.println(map.get(2).equals("Aachal"));
