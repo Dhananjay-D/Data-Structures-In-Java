@@ -3,6 +3,7 @@
 // and value pair, where keys should be unique. If you try to insert
 // the duplicate key, it will replace the element of the corresponding key.
 // they are unordered
+// HashMap<Integer,List<String>> map=new HashMap<>(); value can be of any datatype.
 
                     // Hashmap methods :
 //put()

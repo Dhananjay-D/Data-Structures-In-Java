@@ -1,6 +1,5 @@
 // Singly linked list program
 
-
 package LinkedList;
 import java.util.Scanner;
 public class SLL {
