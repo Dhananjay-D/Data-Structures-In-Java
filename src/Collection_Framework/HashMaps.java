@@ -25,7 +25,7 @@ public class HashMaps {
         //direct print
         System.out.println(map);
 
-        //searching key
+        //searching
         System.out.println(map.containsKey(2));
         System.out.println(map.containsValue("Aachal"));
 

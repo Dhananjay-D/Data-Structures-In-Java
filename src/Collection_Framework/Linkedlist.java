@@ -10,7 +10,7 @@
 // removeFirst()
 // removeLast()
 // contains()
-// indexOf()
+// indexOf() - to get index of elem if present
 // peek()
 // peekFirst()
 // peekLast()
